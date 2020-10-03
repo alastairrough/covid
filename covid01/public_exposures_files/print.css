@@ -1,0 +1,267 @@
+@media print {
+
+	html, body {
+		overflow: visible;
+	}
+
+	div {
+		overflow: visible !important;
+	}
+
+	p {
+		//font-size: 9pt !important;
+		font-size: 11pt !important; //13 Jun 2018: Ruth wanted the font sized decreased
+		margin-bottom: 12px;
+		//line-height: 16px;
+		line-height: 1.5; //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+	
+	body {
+		font-size: 11pt !important; //31 July 2018: Ruth wanted the font sized decreased
+		color: #000;
+		background: #fff;
+	}
+
+	body, article {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	main {
+		margin-left: 0px !important;
+		padding-left: 0px !important;
+	}
+
+	.lead {
+	  font-size: 14pt !important;
+	}
+
+
+	h1, h2, h3, h4 {
+		page-break-after: avoid;
+	}
+
+	h1 {
+		//font-size: 15pt !important;
+		font-size: 18pt !important;  //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	h2 
+	{
+		//font-size: 10pt !important;
+		font-size: 16pt !important;  //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+
+	h3 
+	{
+		//font-size: 9pt !important;
+		font-size: 14pt !important;  //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+
+	h4 
+	{
+		//font-size: 8pt !important;
+		font-size: 12pt !important;  //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+
+	h4.panel-title a {
+		//font-size: 11pt !important;
+		font-size: 14pt !important;  //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+
+	footer {
+		display: none !important;
+	}
+
+	li 
+	{
+		//font-size: 9pt !important;
+		font-size: 12pt !important; //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+  	.tab-nav{
+    display: none !important;
+	}
+
+	.tab-content-source {
+		//font-size: 9pt !important;
+		font-size: 12pt !important; //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+	}
+
+	.tab-heading-source { 
+		display: block !important;
+		background-color: #cccccc !important;
+		font-weight: bold;
+		//font-size: 12pt !important;
+		font-size: 18pt !important; //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+		padding: 1pt;
+	}
+
+	.tab-pane {
+		display: block !important;
+	}
+
+
+	.unprintable a {
+		display: none !important;
+	}
+
+	.site-header {
+		margin-top: 0px;
+		margin-bottom: 50px;
+		display: block !important;
+		border: none !important;
+	}
+	
+	.article-header {
+		margin-bottom: 15px;
+	}
+
+	#ms-designer-ribbon {
+		display: none !important;
+	}
+
+	.page-hero img {
+		display: none !important;
+	}
+
+	img {
+		max-width: 100% !important;
+		page-break-inside: avoid;
+	}
+
+	.social, .page-header-banner {
+		display: none !important;
+	}
+
+	.health-alerts, .mob-alerts {
+		display: none !important;
+	}
+
+	.site-header #banner-expand, .phsa-banner{
+		display: none !important;
+	}
+
+	nav, .mobile-nav, .accordion-nav .breadcrumb {
+		display: none !important;
+	}
+
+	.breadcrumb {
+		display: none !important;
+	}
+
+	.accordion-nav {
+		display: none !important;
+	}
+
+	.top-navigation {
+		display: none !important;
+	}
+
+	a[href]:after {
+		content: none !important;
+	}
+	
+	.panel-heading {
+		border-style: none !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	
+	.panel .collapse {
+		display: block !important;
+		height: auto !important;
+	}
+
+	.panel-group {
+		border-style: none !important;
+	}
+
+	.panel-body {
+		border-style: none !important;
+	}
+
+	aside nav {
+		//font-size: 9pt !important;
+		font-size: 12pt !important; //14 Dec 2016, DC: Theresa/BCCA wanted the font size increased
+		margin-top: 0.5in;
+		display: none; // 13 Jun 218, BG: Ruth requested side hidden
+	}
+
+	#SearchBox, #mobile-search {
+		display: none !important;
+	}
+
+	.site-footer, .copyright {
+		display: none !important;
+	}
+
+	#legalFooterList {
+		display: none !important;
+	}
+
+	@page {
+		margin: .5in;
+	}
+
+	.printable {
+	display: block !important;
+	}
+
+	.unprintable {
+		display: none !important;
+	}	
+
+	.icon-print {
+		display: none;
+	}
+
+	#printFooter {
+		display: block !important;
+		margin-left: 20px;
+		margin-top: 0.25in;
+	}
+
+	#map-div {
+		display: none !important;
+	}
+
+	.site-logo {
+		float: none !important;
+		position: relative;
+	}
+	
+	.lt-ie8 .top-navigation {
+		display: none !important;
+	}
+	.lt-ie8 .container {
+		padding-left: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.lt-ie8 div, .lt-ie8 aside {
+		float: none !important;
+		clear: both;
+		display: block;
+	}
+		.lt-ie8 .printable {
+		display: block !important;
+		}
+		.lt-ie8 .unprintable {
+			display: none;
+		}	
+	.lt-ie8 .col-lg-1, .lt-ie8 .col-lg-2, .lt-ie8 .col-lg-3, .lt-ie8 .col-lg-4, .lt-ie8 .col-lg-5, .lt-ie8 .col-lg-6, .lt-ie8 .col-lg-7, .lt-ie8 .col-lg-8, .lt-ie8 .col-lg-9, .lt-ie8 .col-lg-10, .lt-ie8 .col-lg-11, .lt-ie8 .col-lg-12, .lt-ie8 .col-md-1, .lt-ie8 .col-md-2, .lt-ie8 .col-md-3, .lt-ie8 .col-md-4, .lt-ie8 .col-md-5, .lt-ie8 .col-md-6, .lt-ie8 .col-md-7, .lt-ie8 .col-md-8, .lt-ie8 .col-md-9, .lt-ie8 .col-md-10, .lt-ie8 .col-md-11, .lt-ie8 .col-md-12, .lt-ie8 .col-sm-1, .lt-ie8 .col-sm-2, .lt-ie8 .col-sm-3, .lt-ie8 .col-sm-4, .lt-ie8 .col-sm-5, .lt-ie8 .col-sm-6, .lt-ie8 .col-sm-7, .lt-ie8 .col-sm-8, .lt-ie8 .col-sm-9, .lt-ie8 .col-sm-10, .lt-ie8 .col-sm-11, .lt-ie8 .col-sm-12, .lt-ie8 .col-xs-1, .lt-ie8 .col-xs-2, .lt-ie8 .col-xs-3, .lt-ie8 .col-xs-4, .lt-ie8 .col-xs-5, .lt-ie8 .col-xs-6, .lt-ie8 .col-xs-7, .lt-ie8 .col-xs-8, .lt-ie8 .col-xs-9, .lt-ie8 .col-xs-10, .lt-ie8 .col-xs-11, .lt-ie8 .col-xs-12 {
+		width: 100%;
+		margin-left: 0 !important;
+	}
+	
+	.ie7-warning {
+		display: none !important;
+	}
+
+	.social-container {
+		display: none;
+	}
+}

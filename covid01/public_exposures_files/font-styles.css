@@ -1,0 +1,126 @@
+p.phsa-rteElement-Paragraph {
+    -ms-name:"Paragraph";
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2.phsa-rteElement-Header2 {
+    -ms-name:"Heading 2 Style";
+	font-weight: 500;
+	line-height: 1.4;
+	position: relative;
+}
+
+h3.phsa-rteElement-Header3 {
+    -ms-name:"Heading 3 Style";
+}
+
+h4.phsa-rteElement-Header4 {
+    -ms-name:"Heading 4 Style";
+}
+
+h5.phsa-rteElement-Header5 {
+    -ms-name:"Heading 5 Style";
+}
+
+a.phsa-rteElement-Button {
+    -ms-name:"Button";
+}
+
+a.phsa-rteElement-Button-Delta {
+    -ms-name:"Flat Button";
+}
+
+blockquote.phsa-rteElement-Blockquote {
+	-ms-name:"Callout";
+}
+
+hr.phsa-rteElement-HorizontalRule {
+	-ms-name:"Horizontal Rule";
+}
+
+/* Remove Editor Buttons */
+#Ribbon\.EditingTools\.CPEditTab\.Font-Large-0-0, 
+#Ribbon\.EditingTools\.CPEditTab\.Font-Large-0-1-1,
+#Ribbon\.EditingTools\.CPInsert\.Content,
+#Ribbon\.EditingTools\.CPInsert\.Embed,
+#Ribbon\.EditingTools\.CPInsert\.Links,
+#Ribbon\.WikiPageTab\.Manage\.PageProperties-Large {
+	display: none;
+}
+/* End Remove Editor Buttons */
+
+/* Set Default Image Styles */
+.phsa-rteImage-0
+{
+-ms-name:"No border";
+}
+.phsa-rteImage-1
+{
+-ms-name:"Thin line border";
+/* [ReplaceColor(themeColor:"BodyText",opacity:"1")] */ background-color:#444;
+/* [ReplaceColor(themeColor:"BodyText-Darker",opacity:"1")] */ border:1px solid #333;
+/* [RecolorImage(themeColor:"SubtleBodyText",method:"Tinting")] */ background-image:url("/_layouts/15/images/tabtitlerowbottombg.png?rev=23");
+background-repeat:repeat-x;
+background-position:top;
+}
+.phsa-rteImage-2
+{
+-ms-name:"Table border";
+padding:2px;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid #c6c6c6;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid #ababab;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left:1px solid #c6c6c6;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid #ababab;
+}
+.phsa-rteImage-3
+{
+-ms-name:"Dark border";
+padding:15px;
+/* [ReplaceColor(themeColor:"BodyText-Darker",opacity:"1")] */ background-color:#333;
+/* [ReplaceColor(themeColor:"BodyText",opacity:"1")] */ border:1px solid #444;
+/* [RecolorImage(themeColor:"BodyText-Darker",method:"Tinting")] */ background-image:url("/_layouts/15/images/tabtitlerowbottombg.png?rev=23");
+background-attachment:fixed;
+background-repeat:repeat-x;
+background-position:left bottom;
+}
+.phsa-rteImage-4
+{
+-ms-name:"Light border";
+padding:6px;
+padding-bottom:33px;
+/* [ReplaceColor(themeColor:"BackgroundOverlay-Lightest",opacity:"1")] */ background-color:#F2F2F2;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-top:1px solid #c6c6c6;
+/* [ReplaceColor(themeColor:"Lines")] */ border-bottom:1px solid #ababab;
+/* [ReplaceColor(themeColor:"SubtleLines")] */ border-left:1px solid #c6c6c6;
+/* [ReplaceColor(themeColor:"Lines")] */ border-right:1px solid #ababab;
+background-image:url("/_layouts/15/images/selbg.png?rev=23");
+background-repeat:repeat-x;
+background-position:top;
+}
+/* End Set Default Image Styles */
+
+/* Set Default Image Position */
+.phsa-rtePosition-1{
+-ms-name:"Left";
+float:left;
+margin-right: 25px;
+}
+.phsa-rtePosition-2{
+-ms-name:"Right";
+float:right;
+margin-left: 25px;
+}
+.phsa-rtePosition-3{
+-ms-name:"Top";
+vertical-align:text-top;
+}
+.phsa-rtePosition-4{
+-ms-name:"Middle";
+vertical-align:middle;
+}
+.phsa-rtePosition-5{
+-ms-name:"Bottom";
+vertical-align:text-bottom;
+}
+/* End Set Default Image Position */
+
