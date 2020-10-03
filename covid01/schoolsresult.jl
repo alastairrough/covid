@@ -1,3 +1,11 @@
+{"school": "Champlain Heights Elementary,\u00a0Vancouver School District"}
+{"school": "Address: 6955\u00a0Frontenac St., Vancouver, BC"}
+{"school": "Potential exposure date(s):\u00a0"}
+{"school": "September 22 to 24"}
+{"school": "Aries Program,\u00a0Vancouver School District"}
+{"school": "Address: 1618 E. Hastings\u00a0St., Vancouver, BC"}
+{"school": "Potential exposure date(s):\u00a0"}
+{"school": "September 17, 18, 22, 24, 28\u00a0"}
 {"school": "Cedar Walk Program, Vancouver School District"}
 {"school": "Address:\u00a01043 Kingsway, Vancouver, BC"}
 {"school": "Potential exposure date(s):\u00a0"}
