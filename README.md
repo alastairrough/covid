@@ -8,7 +8,7 @@
 1. https://stackoverflow.com/questions/40856730/how-to-run-scrapy-project-in-jupyter
 1. https://cheerio.js.org/
 
-## Wrokflow to set up
+## Workflow to set up
 
 ```
 scrapy startproject covid01
@@ -47,9 +47,9 @@ response.xpath('//title/text()').get()
 
 response.xpath('//*[@id="9184"]')
 response.xpath('//*[@id="9184"]/div/div[1]/div[1]/div[1]/span/span')
-
+```
 First panel
-###########
+```
 response.xpath('//*[@id="9184"]/div/div[1]/div[1]/div[1]/span/span/text()').get()
 Out[34]: 'Park Drive'
 response.xpath('//*[@id="809"]/div/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span/span/text()').get()
@@ -66,35 +66,21 @@ Date:
 
 response.xpath('//*[@id="9184"]/div/div[1]/div[1]/div[2]/span[4]/text()').get()
 response.xpath('//*[@id="809"]/div/div[1]/div[1]/div[1]/div[1]/div[3]/span[4]/text()').get()
-
-Second Panel
-############
-response.xpath('//*[@id="9184"]/div/div[1]/div[2]/span/span/text()').get()
-Out[48]: 'Abruzzo Cappuccino Bar'
-
-Location:
-response.xpath('//*[@id="9184"]/div/div[1]/div[2]/span/span/text()').get()
-
-Address:
-response.xpath('//*[@id="9184"]/div/div[1]/div[3]/span[1]/text()').get()
-
-Date:
-response.xpath('//*[@id="9184"]/div/div[1]/div[3]/span[4]/text()').get()
-
-response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').get()
-
+```
 All panels
-##########
+```
 response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').get()
 response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').getall()
-
+```
 Top down from "panel-body"
-#########################
-Public
-response.xpath('//*[@id="9184"]/div').get()
-Schools
-response.xpath('//*[@id="809"]/div').get()
 
+Public
+```
+response.xpath('//*[@id="9184"]/div').get()
+```
+Schools
+```
+response.xpath('//*[@id="809"]/div').get()
 
 response.xpath('/html/body/form/div[6]/div/span/div[1]/div[2]/div/div[2]/div/div[1]/main/div[3]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[1]/span/span/text()').get()
 Out[36]: 'Park Drive'
@@ -106,6 +92,7 @@ response.xpath('//*[@id="DeltaPlaceHolderMain"]/div[1]/div[2]/div/div[2]/div/div
 
 ```
 ## with Regex
+```
 <span style="font-size:14px;">(.*?)<\/span>
 
 m1 = response.xpath('//*[@id="9184"]/div').re(r'<span style="font-size:14px;">(.*?)<\/span>')
@@ -148,33 +135,12 @@ def remove_html_tags(text):
 for m2 in m1:
     m3 = remove_html_tags(m2)
     print("match is ",m3)
-
+```
 
 ### Investigate this command
-```
+
 You can start your first spider with:
+```
     cd covid01
     scrapy genspider example example.com
 ```
-
-### Issue with empty span
-In the schools pages there are 2 HTML structures
-
-<div style="font-size:16px;">
-    <span style="font-size:14px;">Address:&nbsp;4685 Keith Road, West Vancouver, BC</span><br>
-    <span style="font-size:14px;">Potential exposure date(s):&nbsp;</span>
-    <span style="font-size:14px;">September 16 to 18, September 21 to 24</span>
-</div>
-
-<div style="font-size:16px;">
-    <span style="font-size:14px;">Address:&nbsp;12300 Blundell Road, Richmond, BC</span><br>
-    <span style="font-size:14px;">Potential exposure date(s):&nbsp;</span>
-    <span aria-hidden="true" style="font-size:14px;"></span>
-    <span style="font-size:14px;">
-        <span aria-hidden="true">
-        </span>
-        September 11 to 18
-    </span>
-</div>
-
-response.xpath('//*[@id="809"]/div/div[1]/div[1]/div[5]/div[4]/div[4]/div[2]/span[4]/text()')
