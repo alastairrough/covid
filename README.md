@@ -2,9 +2,11 @@
 ## Reference
 1. https://docs.scrapy.org/en/latest/intro/tutorial.html
 1. http://www.vch.ca/covid-19/school-exposures
+1. http://www.vch.ca/covid-19/school-exposures.html#809
+1. http://localhost/schools_exposures.html#809
 1. http://www.vch.ca/covid-19/public-exposures
 1. https://stackoverflow.com/questions/40856730/how-to-run-scrapy-project-in-jupyter
-
+1. https://cheerio.js.org/
 
 ## Wrokflow to set up
 
@@ -16,9 +18,8 @@ code for our first Spider. Save it in a file named  under the  directory in your
 ```
 ./covid01/spiders/covid01_spider.py
 ```
-css selector 
+css selector (fails) 
 ```
-#\39 184 > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span > span
 #\39 184 > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span > span
 ```
 xpath 
@@ -87,28 +88,11 @@ All panels
 response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').get()
 response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').getall()
 
-response.xpath('//*[@id="9184"]/div/div/div/div/span/span/text()').getall()
-    ...: 
-Out[59]: 
-['Park Drive',
- 'The King’s Head Public House',
- 'The West Pub',
- 'Flying Beaver Bar and Grill']
-
-response.xpath('//*[@id="9184"]/div/div/div/span/span/text()').getall()
-Out[48]: 'Abruzzo Cappuccino Bar'
-
-response.xpath('//*[@id="9184"]/div/div[2]/span/span/span/text()').get()
-response.xpath('//*[@id="9184"]/div/div/span/span/span/text()').get()
-response.xpath('//*[@id="9184"]/div/div[2]/span/span/span/text()').getall()
-response.xpath('//*[@id="9184"]/div/div/span/text()').get()
-response.xpath('//*[@id="9184"]/div/div/span/text()').getall()
-Out[70]: 'Wreck Beach'
-
 Top down from "panel-body"
 #########################
+Public
 response.xpath('//*[@id="9184"]/div').get()
-Out[4]: 'Cedar Walk Program, Vancouver School District'
+Schools
 response.xpath('//*[@id="809"]/div').get()
 
 

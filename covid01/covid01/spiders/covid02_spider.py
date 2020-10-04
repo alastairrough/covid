@@ -14,8 +14,8 @@ def remove_html_tags(text):
 class QuotesSpider(scrapy.Spider):
     name = "covid02"
     start_urls = [
-        # 'http://localhost/schools_exposures.html',
-        'http://www.vch.ca/covid-19/school-exposures',
+        'http://localhost/schools_exposures.html',
+        # 'http://www.vch.ca/covid-19/school-exposures',
      ]
 
     # def parse(self, response):

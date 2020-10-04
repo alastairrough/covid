@@ -36,8 +36,8 @@ class covid(scrapy.Spider):
         # scrapy regex outputs all match groups as strings
         for myMatch in response.xpath('//*[@id="809"]/div/div//span/text()').getall():
         # for myMatch in response.css('div.table-responsive > table > tbody > tr > td:nth-child(1) > p::text').re(r'(([01]?[0-9]):([0-5][0-9]) ([AaPp][Mm]))'):
-                print(myMatch)
-                ######
-                yield {
-                     '': myMatch,
-                }
+            print(myMatch)
+            ######
+            yield {
+                    '': myMatch,
+            }

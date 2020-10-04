@@ -1,0 +1,23 @@
+{
+  "name": "covid",
+  "version": "1.0.0",
+  "description": "1. https://docs.scrapy.org/en/latest/intro/tutorial.html 1. http://www.vch.ca/covid-19/school-exposures 1. http://www.vch.ca/covid-19/school-exposures.html#809 1. http://localhost/schools_exposures.html#809 1. http://www.vch.ca/covid-19/public-exposures 1. https://stackoverflow.com/questions/40856730/how-to-run-scrapy-project-in-jupyter 1. https://cheerio.js.org/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alastairrough/covid.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alastairrough/covid/issues"
+  },
+  "homepage": "https://github.com/alastairrough/covid#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2"
+  }
+}

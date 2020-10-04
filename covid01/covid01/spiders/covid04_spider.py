@@ -18,8 +18,8 @@ def remove_html_tags(text):
 class covid(scrapy.Spider):
     name = "covid04"
     start_urls = [
-            # 'http://localhost/public_exposures.html',
-            'http://www.vch.ca/covid-19/public-exposures',
+            'http://localhost/public_exposures.html',
+            # 'http://www.vch.ca/covid-19/public-exposures',
      ]
     custom_settings = {
         'LOG_LEVEL': logging.WARNING,
@@ -40,6 +40,6 @@ class covid(scrapy.Spider):
             myMatch1 = remove_html_tags(myMatch)
             print(myMatch1)
                 ######
-                yield {
-                     '': myMatch,
-                }
+            yield {
+                    '': myMatch,
+            }
