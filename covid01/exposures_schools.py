@@ -50,8 +50,8 @@ class covid_schools(scrapy.Spider):
         use xpath response
         """
         # scrapy regex outputs all match groups as strings
-        for myMatch in response.xpath('//*[@id="809"]/div/div//span/text()').getall():
-        # for myMatch in response.css('div.table-responsive > table > tbody > tr > td:nth-child(1) > p::text').re(r'(([01]?[0-9]):([0-5][0-9]) ([AaPp][Mm]))'):
+        # for myMatch in response.xpath('//*[@id="809"]/div/div//span/text()').getall(): # original page
+        for myMatch in response.xpath('//*[@id="6683"]/div/div//span/text()').getall():  # page update Oct 8, 2020
                 print(myMatch)
                 ######
                 yield {

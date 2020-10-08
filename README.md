@@ -8,6 +8,12 @@
 1. https://stackoverflow.com/questions/40856730/how-to-run-scrapy-project-in-jupyter
 1. https://cheerio.js.org/
 
+## Workflow outline
+1. Develop python scripts as Scrapy project
+1. Use the scrapy scripts as standalone
+1. Schedule scrapy scripts in cron
+1. Copy outfile to Node Red for email, or other outputs
+
 ## Workflow to set up
 
 ```
@@ -51,6 +57,7 @@ use the shell
 ```
 scrapy shell 'http://localhost/public_exposures.html'
 scrapy shell 'http://localhost/schools_exposures.html'
+scrapy shell 'http://www.vch.ca/covid-19/school-exposures'
 
 response.css('title')
 response.css('title::text').getall()
