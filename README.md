@@ -18,12 +18,28 @@ code for our first Spider. Save it in a file named  under the  directory in your
 ```
 ./covid01/spiders/covid01_spider.py
 ```
-css selector (fails) 
+## Selector
+```
+$('#6683 > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(5)')
+
+#6683 > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(5)
+#6683
+```
+
+
+## css selector (fails) 
 ```
 #\39 184 > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span > span
 ```
-xpath 
+## xpath 
 ```
+new xpath from Oct 7, 2020
+Vancouver school district 39 (L'Ecole Bilingue)
+//*[@id="6683"]/div/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/span[4]
+
+Sunshine Coast school district 46 
+//*[@id="9751"]/div/p
+
 //*[@id="9184"]/div/div[1]/div[1]/div[1]/span/span
 /html/body/form/div[6]/div/span/div[1]/div[2]/div/div[2]/div/div[1]/main/div[3]/div/div/div[1]/div[2]/div/div[1]/div[1]/div[1]/span/span
 ```
