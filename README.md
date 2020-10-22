@@ -52,6 +52,8 @@ Sunshine Coast school district 46
 from project directory
 ```
 scrapy crawl covid01
+# minimize verbosity
+scrapy crawl covid01 --nolog
 ```
 use the shell
 ```

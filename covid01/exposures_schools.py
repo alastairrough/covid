@@ -38,7 +38,7 @@ class covid_schools(scrapy.Spider):
         'http://www.vch.ca/covid-19/school-exposures',
     ]
     custom_settings = {
-        'LOG_LEVEL': logging.WARNING,
+        'LOG_LEVEL': logging.DEBUG,
         # Used for pipeline 1
         'ITEM_PIPELINES': {'__main__.JsonWriterPipeline': 1},
         'FEED_FORMAT': 'json',                                 # Used for pipeline 2
