@@ -1,3 +1,15 @@
+{"school": "John Henderson Elementary School, Vancouver School District"}
+{"school": "Address: 451 East 53rd Avenue, Vancouver, BC"}
+{"school": "Potential exposure date(s):\u00a0"}
+{"school": "October 13"}
+{"school": "Queen Elizabeth Elementary School, Vancouver School District"}
+{"school": "Address: 4102 16th Avenue West, Vancouver, BC"}
+{"school": "Potential exposure date(s):\u00a0"}
+{"school": "October 13"}
+{"school": "John Oliver Secondary School, Vancouver School District"}
+{"school": "Address: 530 East 41st Avenue, Vancouver, BC"}
+{"school": "Potential exposure date(s):\u00a0"}
+{"school": "October 9"}
 {"school": "Britannia Secondary School, Vancouver School District"}
 {"school": "Address: 1001 Cotton Drive, Vancouver, BC"}
 {"school": "Potential exposure date(s):\u00a0"}
