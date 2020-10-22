@@ -11,7 +11,6 @@ import logging
 import re
 from scrapy.crawler import CrawlerProcess
 
-
 def remove_html_tags(text):
     """Remove html tags from a string"""
     import re
@@ -50,7 +49,6 @@ class covid_schools(scrapy.Spider):
         use xpath response
         """
         # scrapy regex outputs all match groups as strings
-        # for myMatch in response.xpath('//*[@id="809"]/div/div//span/text()').getall(): # original page
         for myMatch in response.xpath('//*[@id="6683"]/div/div//span/text()').getall():  # page update Oct 8, 2020
                 print(myMatch)
                 ######

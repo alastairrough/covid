@@ -1,7 +1,7 @@
 """
 from covid03_spider.py
 parses local copy of VCH convid 19 exposures
-school exposures
+public exposures
 outputs to json file
 """
 
@@ -50,15 +50,12 @@ class covid_public(scrapy.Spider):
         """
         # scrapy regex outputs all match groups as strings
         for myMatch in response.xpath('//*[@id="9184"]/div').re(r'<span style="font-size:14px;">(.*?)<\/span>'):
-        # for myMatch in response.xpath('//*[@id="809"]/div/div//span/text()').getall():
-        # for myMatch in response.css('div.table-responsive > table > tbody > tr > td:nth-child(1) > p::text').re(r'(([01]?[0-9]):([0-5][0-9]) ([AaPp][Mm]))'):
             myMatch1 = remove_html_tags(myMatch)
             print(myMatch1)
             ######
             yield {
                  'public': myMatch1,
             }
-
 
 process = CrawlerProcess({
     'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
