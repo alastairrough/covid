@@ -4,5 +4,10 @@
         "/home/alastair/dev_ws/build/py_pubsub",
         "/home/alastair/dev_ws/install/py_pubsub/lib/python3.6/site-packages",
         "/opt/ros/eloquent/lib/python3.6/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/alastair/dev_ws/build/py_pubsub",
+        "/home/alastair/dev_ws/install/py_pubsub/lib/python3.6/site-packages",
+        "/opt/ros/eloquent/lib/python3.6/site-packages"
     ]
 }
